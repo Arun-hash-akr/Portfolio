@@ -33,7 +33,9 @@ const Content = () => {
                         <div className="separator"></div>
                     </div>
 
+
                     <div className={`info ${showContacts ? "show" : ""}`}>
+                        
                         <div className="sidebar-info_more">
 
                             <ul className="contacts-list">
@@ -47,7 +49,7 @@ const Content = () => {
                                     <div className="contact-info">
                                         <p className="contact-title">Email</p>
 
-                                        <a href="mailto:arunsankarramakr@gmail.com" className="contact-link">arunsankarram@gmail.com</a>
+                                        <a href="mailto:arunsankarramakr@gmail.com" className="contact-link">arunsankarramakr@gmail.com</a>
                                     </div>
 
                                 </li>
