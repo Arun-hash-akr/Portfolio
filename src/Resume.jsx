@@ -1,6 +1,15 @@
 import React from 'react'
 
 const Resume = () => {
+
+  const skills = [
+    { name: "Web Design", percentage: 80 },
+    { name: "Excel", percentage: 70 },
+    { name: "Word", percentage: 90 },
+    { name: "WordPress", percentage: 50 },
+  ];
+
+
   return (
     <>
       <div className="resume">
@@ -22,41 +31,36 @@ const Resume = () => {
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">Bishop Heber College</h4>
 
-              <span>2007 — 2008</span>
+              <span>2023 — 2025</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Master of Science in Computer Science | 75%.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+              <h4 class="h4 timeline-item-title">Bishop Heber College</h4>
 
-              <span>2006 — 2007</span>
+              <span>2020 — 2023</span>
 
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                Bachelor of Computer Applications | 70%.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+              <h4 class="h4 timeline-item-title">Holy Cross Matric Hr Sec School</h4>
 
-              <span>2002 — 2004</span>
+              <span>2020 — 20219</span>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                Computer & Maths |55%.
               </p>
 
             </li>
@@ -65,7 +69,7 @@ const Resume = () => {
 
         </section>
 
-        <section class="timeline">
+        {/* <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -121,7 +125,7 @@ const Resume = () => {
 
           </ol>
 
-        </section>
+        </section> */}
 
         <section class="skill">
 
@@ -129,11 +133,33 @@ const Resume = () => {
 
           <ul class="skills-list content-card">
 
-            <li class="skills-item">
+            {skills.map((skill, index) => (
+              <li className="skills-item" key={index}>
+
+                <div className="title-wrapper">
+                  <h5 className="h5">{skill.name}</h5>
+                  <data value={skill.percentage}>
+                    {skill.percentage}%
+                  </data>
+                </div>
+
+                <div className="skill-progress-bg">
+                  <div
+                    className="skill-progress-fill"
+                    style={{
+                      width: `${skill.percentage}%`
+                    }}
+                  ></div>
+                </div>
+
+              </li>
+            ))}
+
+            {/* <li class="skills-item">
 
               <div class="title-wrapper">
                 <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
+                <data value="90">80%</data>
               </div>
 
               <div className="skill-progress-bg">
@@ -141,18 +167,18 @@ const Resume = () => {
                   className="skill-progress-fill"
                   style={{ width: "50%" }}
                 ></div>
-              </div>
+              </div> */}
 
-              {/* <div class="skill-progress-bg">
+            {/* <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div> */}
 
-            </li>
+            {/* </li>
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
+                <h5 class="h5">Excel</h5>
                 <data value="70">70%</data>
               </div>
 
@@ -161,18 +187,18 @@ const Resume = () => {
                   className="skill-progress-fill"
                   style={{ width: "50%" }}
                 ></div>
-              </div>
+              </div> */}
 
-              {/* <div class="skill-progress-bg">
+            {/* <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 70%;"></div>
               </div> */}
 
-            </li>
+            {/* </li>
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
+                <h5 class="h5">Word</h5>
                 <data value="90">90%</data>
               </div>
 
@@ -199,7 +225,7 @@ const Resume = () => {
                 ></div>
               </div>
 
-            </li>
+            </li> */}
 
           </ul>
 
