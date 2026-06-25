@@ -1,167 +1,57 @@
 import React from 'react'
+import sst from './assets/Images/sst1.png'
+import event from './assets/Images/event1.png'
 
 const Portfolio = () => {
   return (
     <>
 
-      {/* <div className="portfolio">
+      <div className="port">
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
 
-        <section class="projects">
+        <ul class="project-list">
 
-          <ul class="filter-list">
+          <li class="project-item">
+            <a href="#">
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline" href='https://ssttravels.netlify.app/'></ion-icon>
+                </div>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
+                <img src={sst} alt="" />
+              </figure>
 
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
+              <h3 class="project-title">Travel Management</h3>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
+              <p class="project-category">Web development</p>
 
-          </ul>
+            </a>
+          </li>
 
-          <div class="filter-select-box">
+          <li class="project-item">
+            <a href="#">
 
-            <button class="filter-select" data-select>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline" href='https://bootfes2k25.netlify.app/'></ion-icon>
+                </div>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+                <img src={event} alt="" />
+              </figure>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
+              <h3 class="project-title">Event Management</h3>
 
-            </button>
+              <p class="project-category">Web design</p>
 
-            <ul class="select-list">
+            </a>
+          </li>
 
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  {/* <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy"> 
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  {/* <img src="./assets/images/project-2.png" alt="orizon" loading="lazy"> 
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  {/* <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy"> 
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  {/* <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy"> 
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  {/* <img src="./assets/images/project-5.png" alt="dsm." loading="lazy"> 
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-            
-
-          </ul>
-
-        </section>
-      </div> */}
+        </ul>
+      </div>
 
     </>
   )
