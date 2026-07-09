@@ -15,7 +15,7 @@ const About = () => {
                     </p>
 
                     <p>
-                   My goal is to build websites that are functional, responsive, and easy to use while keeping them visually appealing. Moreover, I enjoy learning new technologies, improving my frontend development skills, and creating clean web designs. My aim is to deliver modern websites that provide a great user experience and reflect creativity. I have created several personal and academic web projects to improve my skills as a frontend developer. goal is to build websites that are functional, responsive, and easy to use while keeping them visually appealing. Moreover, I enjoy learning new technologies, improving my frontend development skills, and creating clean web designs. My aim is to deliver modern websites that provide a great user experience and reflect creativity. I have created several personal and academic web projects to improve my skills as a frontend developer.
+                   My goal is to build websites that are functional, responsive, and easy to use while keeping them visually appealing. Moreover, I enjoy learning new technologies, improving my frontend development skills, and creating clean web designs. My aim is to deliver modern websites that provide a great user experience and reflect creativity. I have created several personal and academic web projects to improve my skills as a frontend developer. 
                     </p>
                 </section>
 
